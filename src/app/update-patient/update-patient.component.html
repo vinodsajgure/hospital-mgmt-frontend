@@ -1,0 +1,47 @@
+<div class="container">
+    <h2 class="text-center">Update Patient</h2>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter name here" class="form-control"
+                [(ngModel)]="patient.name">
+        </div>
+        <div class="form-group">
+            <label for="">Age</label>
+            <input type="text" id="age" class="form-control" name="age" placeholder="Enter the Age here"
+                [(ngModel)]="patient.age">
+        </div>
+
+        <div class="form-group">
+            <label for="">Blood</label>
+            <input type="text" id="blood" class="form-control" name="blood" placeholder="Enter the blood type here"
+                [(ngModel)]="patient.blood">
+        </div>
+
+        <div class="form-group">
+            <label for="">Prescription</label>
+            <input type="text" id="prescription" class="form-control" name="prescription"
+                placeholder="Enter the Prescription here" [(ngModel)]="patient.prescription">
+        </div>
+
+        <div class="form-group">
+            <label for="">Dose</label>
+            <input type="text" id="dose" class="form-control" name="dose" placeholder="Enter the dose here"
+                [(ngModel)]="patient.dose">
+        </div>
+
+        <div class="form-group">
+            <label for="">Urgency</label>
+            <input type="text" id="urgency" class="form-control" name="urgency" placeholder="Enter the urgency here"
+                [(ngModel)]="patient.urgency">
+        </div>
+
+        <div class="form-group">
+            <label for="">Fees</label>
+            <input type="text" id="fees" class="form-control" name="fees" placeholder="Enter the fees here"
+                [(ngModel)]="patient.fees">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
